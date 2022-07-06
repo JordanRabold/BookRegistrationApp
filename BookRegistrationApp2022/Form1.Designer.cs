@@ -34,6 +34,9 @@
             this.buttonAddCustomer = new System.Windows.Forms.Button();
             this.buttonAddBook = new System.Windows.Forms.Button();
             this.datePicker = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comboBoxCustomer
@@ -92,11 +95,41 @@
             this.datePicker.TabIndex = 6;
             this.datePicker.ValueChanged += new System.EventHandler(this.datePicker_ValueChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Customer";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(27, 151);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Book";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 234);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Date";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.datePicker);
             this.Controls.Add(this.buttonAddBook);
             this.Controls.Add(this.buttonAddCustomer);
@@ -107,6 +140,7 @@
             this.Text = "Book Registration";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -118,5 +152,8 @@
         private Button buttonAddCustomer;
         private Button buttonAddBook;
         private DateTimePicker datePicker;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }
